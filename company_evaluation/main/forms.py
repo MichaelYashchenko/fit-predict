@@ -3,8 +3,8 @@ from django import forms
 
 class PredictPostForm(forms.Form):
     MODEL_CHOICES = (
-        ('m1', 'model1'),
-        ('m2', 'model2'),
+        ('bert', 'bert'),
+        ('cat_boost', 'cat_boost'),
     )
     sentence = forms.CharField(label='Введите ваш отзыв',
                                required=False)
